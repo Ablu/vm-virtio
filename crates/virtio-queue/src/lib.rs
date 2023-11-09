@@ -24,6 +24,7 @@ use vm_memory::{GuestMemory, GuestMemoryError};
 
 pub use self::chain::{DescriptorChain, DescriptorChainRwIter};
 pub use self::descriptor::{Descriptor, VirtqUsedElem};
+pub use self::descriptor_utils::DescriptorChainConsumer;
 pub use self::queue::{AvailIter, Queue};
 pub use self::queue_sync::QueueSync;
 pub use self::state::QueueState;
@@ -34,6 +35,7 @@ pub mod mock;
 
 mod chain;
 mod descriptor;
+mod descriptor_utils;
 mod queue;
 mod queue_sync;
 mod state;
